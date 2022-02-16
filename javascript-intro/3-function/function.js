@@ -4,7 +4,6 @@
 function sayHi(){
     console.log("Hello")
 }
-
 // call the function
 sayHi()
 
@@ -19,3 +18,18 @@ function sayHi(name){
 sayHi("Ron")
 sayHi("Sara")
 sayHi("Susey")
+
+
+//////////////////////////////////////////////
+
+
+//1 parameter
+function double(x){
+    return 2*x
+}
+
+//2 parameters 
+function equation(x,y){
+    return 2*x+y
+}
+console.log(equation(4,4))
