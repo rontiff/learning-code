@@ -26,7 +26,6 @@ sayHi("Susey")
 //1 parameter
 function double(x){
     return 2*x
-    
 }
 
 //2 parameters 
