@@ -11,7 +11,7 @@ export default function Board(){
     const [squares, setSquare] = useState<Array<SquareValue>>(Array(9).fill(SquareValue.Circle))
     return (
         <div>
-            Board
+            Board 3x3
             {
                 squares.map((square, index)=>(
                     <Square value={square} key={index}/>
