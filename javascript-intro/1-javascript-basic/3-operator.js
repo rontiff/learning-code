@@ -97,13 +97,8 @@ console.log(3 > 2 || 5 >= 2 && 2 === 1);
 //???????????????????????????????????????????????
 
 
-// exercise  (Open it from a seperate file)
 
-// let a;
-// let b;
-// let c;
-// let d;
-// let e;
+// exercise  (Open it from a separated file)
 
 a = 6
 b = 5
@@ -111,13 +106,13 @@ c = 10
 d = 100
 e = 100
 
-const result1 = 5 < a;
-const result2 = "5" == b;
-const result3 = 10 >= c;
-const result4 = 10 === c;
-const result5 = d !== c;
-const result6 = d == e;
+const answer1 = 5 < a;
+const answer2 = "5" == b;
+const answer3 = 10 >= c;
+const answer4 = 10 === c;
+const answer5 = d !== c;
+const answer6 = d == e;
+const answer7 = b>a;
 
-console.log(result1,result2,result3,result4,result5,result6)
-
+console.log(answer1,answer2,answer3,answer4,answer5,answer6,answer7)
 
