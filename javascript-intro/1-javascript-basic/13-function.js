@@ -1,11 +1,11 @@
 
 // When calling function, it will say hello.
 
-function sayHi(){
+function sayHiHi(){
     console.log("Hello")
 }
 // call the function
-sayHi()
+sayHiHi()
 
 
 //////////////////////////////////////////////
