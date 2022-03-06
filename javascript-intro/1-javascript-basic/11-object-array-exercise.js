@@ -6,7 +6,7 @@ data=[
     {"date": "5 Jan", "minTemperature": 16, "maxTemperature": 21},
     {"date": "6 Jan", "minTemperature": 17, "maxTemperature": 21},
     {"date": "7 Jan", "minTemperature": 18, "maxTemperature": 22},
-  ]
+]
 
 
 //   Use .sort() to get an array with the forecasts ordered by minimum temperature in descending order
@@ -26,11 +26,17 @@ console.log(data.map(function(content){
     return content.date
 }))
   
+
+
+
 //   Use .filter() to get an array with all dates with forecast maximum temperatures higher than 20
 
 console.log(data.filter(function(content){
     return content.maxTemperature>20
 }))
+
+
+
 
 //   [BONUS] Use .reduce() to find the date with the lowest temperature
 

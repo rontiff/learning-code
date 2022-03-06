@@ -1,5 +1,3 @@
-//////////////////////////////////////////////////////////////
-
 // Object Array
 const books = [
     {
@@ -104,7 +102,7 @@ console.log(students.map(function(student){
     return student.name
 }))
 
-//filter = 過濾
+//filter = 過濾條件
 //only select student age<=30
 console.log(students.filter(function(student){  //only Gordon fulfilled 
     if (student.age<=30){
@@ -151,14 +149,6 @@ console.log(students.reduce(function(previous, current){
 
 
 
-//Join
-//Array to String
-
-const theName=['John', 'Peter', 'Sam', 'Anne', 'Susan', 'Josephine' ]
-
-const theName1=theName.join(",")
-
-console.log(theName1)    //result--> John,Peter,Sam,Anne,Susan,Josephine
 
 
 

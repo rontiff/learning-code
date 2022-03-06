@@ -1,22 +1,20 @@
 
-
 //Objects
 
-const book={                                        // remember add the = sign 
-    title: "Introduction of JavaScript",            // between item need to add ","
+const book={  // remember add equal sign =  
+    title: "Introduction of JavaScript", // between item need to add ","
     author:"Sara Chan",
-    price: 0
+    price: 0,
 }
 
 console.log(book)
+
+// 2 ways to select item in object
 console.log(book.author)
-
-
-
+console.log(book["author"])
 
 
 ////////////////////////////////////////////////////////////////////////////////////
-//有一個名為 teacher的物件，及一個常數subjectKey。請嘗試定義一個變數名為subject，以subjectKey讀取teacher的subject的性質。
 
 const subjectKey = "subject";
 
@@ -31,14 +29,7 @@ console.log(teacher.subject)
 console.log(teacher[subjectKey])
 
 
-
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////
-
-//Change object item change physic -->History     2020-1-1 to 2019-1-1
-
-//step 1: directly write the object name. -->  teacher2.subject="History"
 
 const teacher2 = {
     name:"Sam",
@@ -46,6 +37,7 @@ const teacher2 = {
     commencementDate: "2020-01-01"
 }
 
+//edit object
 teacher2.subject="History"
 teacher2.commencementDate="2019-01-01"
 
@@ -53,11 +45,8 @@ console.log(teacher2)
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////
+
 //change object item from variable 
-
-//step 1: Create nother variable 
-//step 2: assign value into the variable
-
 const student = {
     age: 20,
     grade: "C-"
@@ -70,8 +59,6 @@ student[ageKey]="15"
 student[gradeKey]="B+"                
 
 console.log(student)
-
-
 
 /////////////////////////////////////////////////////////////////////////////////////
 
@@ -132,7 +119,15 @@ console.log(clonedBook4)
 
 
 //method 2:
-const cloneBook5 = Object.assign({},book4)
-
+let cloneBook5 = Object.assign({}, book4);
 console.log(cloneBook5)
+
+
+//method 3:
+const person = {
+    firstName: 'John',
+    lastName: 'Doe'
+};
+
+let cloneData = {...data};
 

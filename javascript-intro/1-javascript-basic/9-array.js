@@ -21,6 +21,17 @@ while(y<numbers.length){
     console.log(numbers[y])
     y+=1
 }
+//////////////////////////////////////////////////////////////
+// Create array [1,2,3,4,5,6]
+
+let x=1
+numList=[]
+
+while(x<=6){
+    numList.push(x)
+    x+=1
+}
+console.log(numList)
 
 //////////////////////////////////////////////////////////////
 
@@ -143,3 +154,15 @@ willIndex=className.indexOf("will")
 
 console.log(aprilIndex)  //9
 console.log(willIndex)  //1
+
+
+/////////////////////////////////////////////////////////////
+
+//Join
+//Array to String
+
+const theName=['John', 'Peter', 'Sam', 'Anne', 'Susan', 'Josephine' ]
+
+const theName1=theName.join(",")
+
+console.log(theName1)    //result--> John,Peter,Sam,Anne,Susan,Josephine

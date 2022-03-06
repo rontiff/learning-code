@@ -37,7 +37,10 @@ function propertyTax(price){
     }
 }
 
-payment="you need to pay "+propertyTax(1900000)+ "$ for property tax."
+
+
+amount=(propertyTax(123456789)).toFixed(0)
+
+payment="You need to pay "+amount+ "$ for property tax."
 
 console.log(payment)
-

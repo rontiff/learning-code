@@ -17,7 +17,7 @@ function sayHi(name){
 }
 sayHi("Ron")
 sayHi("Sara")
-sayHi("Susey")
+sayHi("Vanessa")
 
 
 //////////////////////////////////////////////
