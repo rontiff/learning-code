@@ -25,7 +25,12 @@ var salary1=2000;
 var salary1=3000;
 
 //"let", can't re-define
-let salary=2000;
+let x=1
+console.log(x) //=1
+x+=1
+console.log(x) //=2
+x+=1
+console.log(x) //=3
 
 
 //"const"

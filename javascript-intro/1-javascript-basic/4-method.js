@@ -16,8 +16,11 @@ console.log(Math.round(1.45))
 //四捨五入整數
 console.log(Math.round(27999/1000)*1000)
 
+//小數點後幾多個位
+console.log((Math.random()*10).toFixed(2))
 
 //random (0-1)
 console.log(Math.random()*34)
 //random (1-5)
 console.log(Math.floor(Math.random()*5)+1)
+

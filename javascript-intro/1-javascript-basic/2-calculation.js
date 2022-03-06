@@ -73,8 +73,6 @@ let missedFreeThrows=0.3;
 let turnover=2.4;
 let gamePlayed=11;
 
-let efficiency = (points + rebounds + assists + steals + blocks+ missedFieldGoals-missedFreeThrows-turnover) / gamePlayed
+let kyrieEfficiency = (points + rebounds + assists + steals + blocks+ missedFieldGoals-missedFreeThrows-turnover) / gamePlayed
 
-kyrieEfficiency = efficiency
-
-console.log(kyrieEfficiency)
+console.log(kyrieEfficiency.toFixed(2))
