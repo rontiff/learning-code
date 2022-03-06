@@ -1,5 +1,3 @@
-
-
 //Boolean    True / false 
 
 ronCanDrive = true;

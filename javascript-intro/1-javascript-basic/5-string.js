@@ -1,11 +1,22 @@
 
 //Strings 
+let name = "Hello my name is Ron"
 
-let name = "Ron"
-let email = "1234567@gmail.com"
-let age ="25"
+//count number of character
+console.log(name.length)  //=20, meaning number of character
 
-console.log("John said, \"I have a bad day today\"")
+//Select word "Hello" only
+console.log(name.substring(0,5))
+console.log(name.substring(-3))
+
+
+//Change lower case, Upper case
+console.log(name.toLowerCase())
+console.log(name.toUpperCase())
+
+
+let john="John said, \"I have a bad day today\""
+console.log(john)
 
 
 const lastName = "Ha"
@@ -16,9 +27,10 @@ const fullName= lastName+" "+firstName;
 console.log(fullName)
 
 
+////////////////////////////////////////////////////////////////////
 
-const firstSentence =("This is the first sentence.")
-const secondSentence = ("this is the second sentence.")
+const firstSentence ="This is the first sentence."
+const secondSentence = "This is the second sentence."
 
 const fullSentence = firstSentence+ "\n" + secondSentence     
 

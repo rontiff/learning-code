@@ -1,4 +1,4 @@
-// +-*/
+//加減乘除
 
 let johnAge=24;
 let peterAge=23;
@@ -6,9 +6,8 @@ let peterAge=23;
 let sumOfAge = johnAge+peterAge;
 let difOfAge = johnAge-peterAge;
 
-
-console.log(difOfAge)
-console.log(sumOfAge)
+console.log(sumOfAge) //=47
+console.log(difOfAge) //=1
 
 
 //reminder / power / +- sign
@@ -17,7 +16,7 @@ let apples=11;
 let people=3;
 let appleRemain =apples%people;
 
-console.log(appleRemain)
+console.log(appleRemain) //=2
 
 
 let base=10;
@@ -25,7 +24,7 @@ let power=2;
 
 let answer=base**power;
 
-console.log(answer)
+console.log(answer) //=100
 
 
 
@@ -38,9 +37,9 @@ console.log(nextYear)
 
 
 let num=5 
-console.log(num)
+console.log(num) //=5
 num++
-console.log(num)
+console.log(num) //=6
 
 
 let num2=7
@@ -52,13 +51,11 @@ console.log(num2)
 
 let x=150
 x=x+10;
-
-console.log(x)
+console.log(x) //=160
 
 let y=150
 y+=10
-
-console.log(y)
+console.log(y) //=160
 
 
 

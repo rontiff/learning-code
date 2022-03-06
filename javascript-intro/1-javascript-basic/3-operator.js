@@ -1,6 +1,6 @@
 
-
-// > < >= <=  compare operator 
+// Comparison Operator show True False result
+// > < >= <=  
 
 // == equal operator
 
@@ -8,38 +8,29 @@
 2 == 2 // true
 "2" == 2 // true
 
-// let result1, result2, result3;
 
 // result0 = true
 result1 = 10 == 10 
 result2 = 10 == "10"
 result3 = 10 == 100
 
-console.log(result1,result2,result3)
+console.log(result1,result2,result3)  //true true false 
 
 
 ////////////////////////////////////////////////
 
-
-
-
-
-
-// === identity operator 
+// === Equal Value + Equal Type
 
 1 === 2 // false
 2 === 2 // true
 "2" === 2 // false
 
-
-// let result4, result5, result6;
-
-// result0 = true
  result4 =10=== 10;
  result5 =10==="10";
  result6 =10===100;
- console.log(result4,result5,result6);
+ console.log(result4,result5,result6);  //true false false 
 
+////////////////////////////////////////////////
 
 //  !=  inequality operator 
 
@@ -47,27 +38,23 @@ console.log(result1,result2,result3)
 2 != 2 // false
 "2" != 2 // false
 
-let result7, result8, result9;
+let result7 = true != (5 < 10)
+let result8 = 10 != "10"
+let result9 = 10 != 100
 
-// result0 = true
-result7 = true != (5 < 10)
-result8 = 10 != "10"
-result9 = 10 != 100
-console.log(result7,result8,result9);
+console.log(result7,result8,result9);  // false false true
 
+////////////////////////////////////////////////
 
-//  !==  Non-identity Operator
+//  !== Equal Value + Equal Type
 
 1 !== 2 // true
 2 !== 2 // false
 "2" !== 2 // true
 
-let result11, result12, result13;
-
-// result0 = true
-result11 = false !== (10 >= 10)
-result12 = 10 !== "10"
-result13 = 10 !== 100
+let result11 = false !== (10 >= 10)
+let result12 = 10 !== "10"
+let result13 = 10 !== 100
 
 console.log(result11,result12,result13);
 
@@ -110,12 +97,6 @@ console.log(3 > 2 || 5 >= 2 && 2 === 1);
 //???????????????????????????????????????????????
 
 
-
-
-
-
-
- 
 // exercise  (Open it from a seperate file)
 
 // let a;

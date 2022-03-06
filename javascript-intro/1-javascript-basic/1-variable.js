@@ -2,45 +2,40 @@
 // print out something
 console.log("Hello World")
 
-//variables: 
+//naming (camel naming)
+let myAge = 24
+let mySalary = 1000
 
-name = "Ron"   //name -->Variables   Ron-->Value 
+
+//name -->Variables   Ron-->Value 
+let name = "Ron"   
 console.log(name)
 
 
 // Value can become variable 
-
-name = "Sara"
-anothername = name
-console.log(anothername)
-
+let momName = "Sara"
+anotherName = momName
+console.log(anotherName)
 
 
-//"Var"? assign value   (Almost never use Var anymore)
 
-var age=25
-var height=170
-
-//"let"? 
-let salary=2000;
+//"Var"? assign value
+//Almost never use Var anymore, because it can re-define
 var salary1=2000;
 var salary1=3000;
+
+//"let", can't re-define
+let salary=2000;
+
 
 //"const"
 const pi=3.14;
 console.log(pi)
 
-const pinew=pi;
+const piNew=pi;
 
-console.log(pinew)
+console.log(piNew)
 
-
-
-//naming 
-
-let myAge = 24
-let mySalary = 1000
-let myeight = 64
 
 
 //how to swap value? 
