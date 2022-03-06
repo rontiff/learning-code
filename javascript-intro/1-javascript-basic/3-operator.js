@@ -8,7 +8,7 @@
 2 == 2 // true
 "2" == 2 // true
 
-let result1, result2, result3;
+// let result1, result2, result3;
 
 // result0 = true
 result1 = 10 == 10 
@@ -32,7 +32,7 @@ console.log(result1,result2,result3)
 "2" === 2 // false
 
 
-let result4, result5, result6;
+// let result4, result5, result6;
 
 // result0 = true
  result4 =10=== 10;
@@ -118,11 +118,11 @@ console.log(3 > 2 || 5 >= 2 && 2 === 1);
  
 // exercise  (Open it from a seperate file)
 
-let a;
-let b;
-let c;
-let d;
-let e;
+// let a;
+// let b;
+// let c;
+// let d;
+// let e;
 
 a = 6
 b = 5
