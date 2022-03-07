@@ -1,0 +1,16 @@
+
+////////////////////////////////////////////////////////////////////////////////////
+
+//Scope = 有效範圍
+
+// example of Block Scope: let , const
+
+if (2>1){
+    let a=0;    //"a" only define inside the if-statement. Not global
+    a+=1;
+    console.log(a)
+}
+
+console.log(a) // This will Show error, "a" is not defined in global
+
+////////////////////////////////////////////////////////////////////////////////////
