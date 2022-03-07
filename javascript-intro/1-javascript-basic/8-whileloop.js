@@ -1,6 +1,8 @@
 // WhileLoop係用黎數野
 // WhileLoop條件係true, 就會不斷做野
 
+//主要用黎做"條件性"既野
+
 //Run 10次 console.log(y)
 let x=1
 let y=1
@@ -93,6 +95,19 @@ while(x<5){
     x+=1
 }
 //////////////////////////////////////////////////////////
+
+x=0
+array=["alex","gordon","bobby"]
+
+while(x<array.length){
+    console.log(array[x])
+    x+=1
+}
+
+
+
+//////////////////////////////////////////////////////////
+
 
 //Infinity Loop
 // let x=1
