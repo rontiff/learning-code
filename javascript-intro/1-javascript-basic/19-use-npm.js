@@ -11,6 +11,7 @@
 // Step3: npm install readline-sync
 //     -當npm install 加工具，package.json 會 update
 //     -node_modules 係儲存install 左要用既 npm 工具
+//     -記得git push 要 gitignore (node_modules, package-lock.json, package.json)
 
 //Step4: import 入去JS file 用
 
