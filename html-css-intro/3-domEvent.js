@@ -1,13 +1,11 @@
 
-// let up=document.querySelector(".fa-arrow-up") //class name 
-// let down=document.querySelector(".fa-arrow-down")
-// let left=document.querySelector(".fa-arrow-left")
-// let right=document.querySelector(".fa-arrow-right")
-
 
 let arrows=document.querySelectorAll('.fa-solid')  //拎曬所有 elements
 let current=document.querySelector('.current')     // 空div 用黎 update 
 let random=Math.floor(Math.random()*4)
+let score=document.querySelector('.score')
+let reset=document.querySelector('#reset')
+
 
 //個 function 用黎update current div
 function nextDance(){
@@ -31,13 +29,13 @@ nextDance()
 for(const arrow of arrows){
     arrow.addEventListener('click',function(){
         if (random==0 && arrow.classList.contains("fa-arrow-up")){
-            console.log('correct')
+            score.innerHTML=parseInt(score.innerHTML) + 1;
         }else if (random==1 && arrow.classList.contains("fa-arrow-down")){
-            console.log('correct') 
+            score.innerHTML=parseInt(score.innerHTML) + 1;
         }else if (random==2 && arrow.classList.contains("fa-arrow-left")){
-            console.log('correct')
+            score.innerHTML=parseInt(score.innerHTML) + 1;
         }else if (random==3 && arrow.classList.contains("fa-arrow-right")){
-            console.log('correct')
+            score.innerHTML=parseInt(score.innerHTML) + 1;
         }else{
             console.log('incorrect')
         }
@@ -65,4 +63,11 @@ document.body.addEventListener('keydown',function(event){
     nextDance()  //每一次 run 完重新 run 一次個program
 
     // console.log(event.keyCode);
+})
+
+
+
+reset.addEventListener('click',function(){
+    score.innerHTML=0;
+    nextDance()
 })

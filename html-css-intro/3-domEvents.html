@@ -35,17 +35,38 @@
             color: red;
             font-size: 60px;
         }
+        #control{
+            display: flex;
+            justify-content: center;
+        }
+        #reset{
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            max-width: 100px;
+            margin-top: 25px;
+            border-radius: 45px;
+
+            padding: 30px;
+            font-size: 30px;
+            cursor: pointer;
+            color: green;
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
     <div id="maincontent">
-        <div id="title">Dance</div>
+        <div id="title">上下左右 (Score: <span class="score">0</span>)</div>
         <div class="current"></div>
         <div id="button">
             <div class="fa-solid fa-arrow-up"></div>
             <div class="fa-solid fa-arrow-down"></div>
             <div class="fa-solid fa-arrow-left"></div>
             <div class="fa-solid fa-arrow-right"></div>
+        </div>
+        <div id="control">
+            <div id="reset">Reset</div>
         </div>
     </div>
     <script src="./3-domEvent.js"></script>
