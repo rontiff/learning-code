@@ -3,8 +3,8 @@
 
 //係 website 拎想要既 element 
 // doucment default 送既
-let count=document.querySelector('span')
-let count2=document.querySelector('div')
+let count=document.querySelector('#left')
+let count2=document.querySelector('#right')
 
 // 好多function可以用, example:
 
