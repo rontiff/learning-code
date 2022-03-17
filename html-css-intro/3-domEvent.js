@@ -31,6 +31,16 @@ function nextDance(){
 nextDance()
 
 
+// Elements attribute:
+
+// Element.innerHTML
+// Element.innerText
+// Element.style
+// Element.className
+// Element.value
+
+
+
 
 // 如果用 querySelectorAll，就要 for loop 所有button出黎
 // Click 邊個button 有咩output
@@ -51,11 +61,14 @@ for(const arrow of arrows){
     })
 }
 
-
+// Element Events Example: 
+// click, scroll, mouseenter, touchmove, focus, input, resize, Change,
+// keydown, keyup, mouseleave, drop, blur, touchstart, dragstart,load
 
 // 用keyboard 上下左右 (38, 40, 37, 39) CHECK IN CONSOLE F12
 
 //body 係html所有野       //keydown 係撳掣用   //event 係自己定
+
 document.body.addEventListener('keydown',function(event){
     if (random==0 && event.keyCode==38){
         console.log('correct')
@@ -86,3 +99,6 @@ reset.addEventListener('click',function(){
     score.innerHTML=0;
     nextDance()
 })
+
+/////////////////////////////////////////////////////
+
