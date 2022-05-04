@@ -1,14 +1,10 @@
-
 // type rafce , the short cut of the extension.
 
-
-const Header = (props) => {
+const Header1 = () => {
   return (
-    <header>
-        <h1>{props.title}</h1>
-    </header>
+    <h1 style={{color: "red", backgroundColor:"black"}}>Task Tracker</h1>
+    // inline CSS
   )
 }
 
-
-export default Header
+export default Header1
