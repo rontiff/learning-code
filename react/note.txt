@@ -1,0 +1,6 @@
+
+Agenda
+1. Review
+2. SPA (single page application)
+3. React
+
