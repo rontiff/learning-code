@@ -5,6 +5,10 @@ import Header4 from './components/Header4'
 
 
 function App() {
+
+  const name = "Sara"
+  const x = true
+  const y = false
   return (
     // <h2>hello</h2> JSX expressions must have one parent element.
     /* JSX use className to assign class similar to CSS */
@@ -18,11 +22,20 @@ function App() {
       <Header3/>
       {/* Header 4*/} 
       <Header4/>
+      <hr />
+      <br />
 
-      
+      <h1>Hello From React</h1>
+      <h2>Hello {name}</h2>
+      <h2>Math calculation in curly bracket = {1+1}</h2>
+      <h2>Example of if-else statement, {x? "yes": "no"}</h2>
+      <h2>Example of if-else statement, {y? "yes": "no"}</h2>
+      <br />
+      <hr />
+      <br />
+
 
     </div>
-
     
   );
 }

@@ -7,7 +7,7 @@ function App() {
   
     return (
       /* JSX use className to assign class similar to CSS */
-      <div className="container">   {/* change the name to container for styling later    */}
+      <div className="container">
         <h1>Hello From React</h1>
         <h2>Hello {name}</h2>
         <h2>Math calculation in curly bracket = {1+1}</h2>
