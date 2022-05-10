@@ -1,4 +1,3 @@
-
 public class Main{
     public static void main(String[]args){
         //  System.out.println("Hello World");
@@ -9,7 +8,7 @@ public class Main{
         //integer value
         int viewsCount = 123456789;
 
-        //big number seperation 
+        //big number separation
         int longViewCountNumber = 123_456_789;   //the underscore is just like a comma. 
 
         //really big number
@@ -31,7 +30,7 @@ public class Main{
 
         //boolean
         boolean isEligible =true;
-        
+
      } 
  }   
  
