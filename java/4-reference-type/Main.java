@@ -7,7 +7,7 @@ import java.util.Date;
 public class Main{
     public static void main(String[]args){
         //dont have allocate memory
-        byte age=30; // no member
+        // byte age=30; // no member
         //reference type ALWAYS need tonew opp allocate memory.
         //use new allocate operator 
         Date now=new Date();
