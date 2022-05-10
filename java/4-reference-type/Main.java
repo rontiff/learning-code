@@ -1,23 +1,26 @@
-//in order to use a class in different object.
-//you need to import it.
-
-//importing Date at java.util package
+//Reference Types need to import
 import java.util.Date;
 
 public class Main{
     public static void main(String[]args){
-        //dont have allocate memory
-        int age=30;
 
-        // byte age=30; // no member
-        //reference type ALWAYS need tonew opp allocate memory.
-        //use new allocate operator 
-        Date now=new Date();
-        now.getTime();    //member 
-        System.out.println(now);
+        //primitive type no allocate memory
+        int age=10;
         System.out.println(age);
 
 
+        //reference type ALWAYS need new operator allocate 分配 memory.
+
+        Date now=new Date();      //"now" instance become the Date Class
+        now.getTime();            //reference type family member. using dot to find family.
+        System.out.println(now);  //short cut: sout
+        
      } 
  }   
+
+
+
+
+
+ 
  
