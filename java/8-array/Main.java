@@ -2,10 +2,10 @@ import java.util.Arrays;
 
 public class Main{
     public static void main(String[]args){
-
+        
+        //array is Reference types
         //array have fix length
 
-        //array is Reference types
         //Create integer array
         int[] numbers = new int[5];
 
@@ -13,14 +13,12 @@ public class Main{
         numbers[1]=2;
 
         //wrong example 
-        System.out.println(numbers);
+        System.out.println(numbers);  //don't do this
 
-        // use a Class in Java --> Arrays
-        Arrays.toString(numbers);
+        //correct example, use "Arrays" class
+        Arrays.toString(numbers);     //do this 
 
         System.out.println(Arrays.toString(numbers));
-
-        
 
         ///////////////////////////////////////////////
         ///////////////////////////////////////////////
@@ -31,10 +29,5 @@ public class Main{
         System.out.println(numbers2);
 
         System.out.println(numbers2.length);
-
-        
-
-
-
     }
 }
