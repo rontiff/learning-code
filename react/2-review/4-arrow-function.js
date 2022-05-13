@@ -81,4 +81,4 @@ const above30 = students.filter(function(student){
                     }
                 })
 
-console.log(above30)
+console.log(above30)  // susey & sara object will printed
