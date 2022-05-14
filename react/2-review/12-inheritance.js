@@ -1,5 +1,5 @@
 
-
+// Parent class
 class Person {
     constructor(name){
         this.name = name;
@@ -9,8 +9,7 @@ class Person {
     }
 }
 
-// new class of teacher inheritance Person 
-
+//Son class (inheritance from Parent)
 class Teacher extends Person{
     constructor(name, degree){
         //need to reference to parent's class
@@ -18,9 +17,20 @@ class Teacher extends Person{
         this.degree=degree;
     }
     //teacher own method:
-    teacher(){
+    teach(){
         console.log('teacher')
     }
 }
 
-const teacher = new Teacher('sara')
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+
+//create teacher object
+const teacher = new Teacher('Sara', "Nursing")
+
+//use the object dot ( teacher. ), to select object element 
+
+// teacher.
+
+// should see degree, name, teach, walk to select. 
+
