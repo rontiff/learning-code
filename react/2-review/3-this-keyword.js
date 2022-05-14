@@ -4,14 +4,14 @@
 const person={
     name:'sara',
     walk(){
-        console.log(this)  
+        console.log(this) 
     }
 }
 person.walk(); 
 //run "console.log(this)" , so the object will print out.
 
 /////////////////////////////////////////////////////////////////////////
-//assign variable
+//assign variable related to "this"
 const walk1 = person.walk.bind(person)
 walk1()
 //bind method = can set "this" permanently

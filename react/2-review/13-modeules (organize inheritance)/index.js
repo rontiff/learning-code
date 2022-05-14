@@ -8,3 +8,5 @@ import {Teacher} from './teacher'
 const teacher = new Teacher('Sara', "Nursing")
 
 teacher.teach()
+
+console.log(teacher)
