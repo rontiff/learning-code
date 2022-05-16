@@ -9,6 +9,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>
+          today im going to learn React 
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -17,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+
       </header>
     </div>
   );
