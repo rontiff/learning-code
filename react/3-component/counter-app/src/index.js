@@ -14,6 +14,7 @@ import SetAttributes from './components/SetAttributes';
 import ClassNameFunction from './components/ClassNameFunction';
 import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionRender';
+import Trial from './components/trial';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,6 +36,9 @@ root.render(
     <br/>
     <ConditionalRender/>
     <br/>
+    <Trial/>
+
+
 
     
 

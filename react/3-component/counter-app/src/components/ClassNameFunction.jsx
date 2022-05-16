@@ -15,7 +15,7 @@ class ClassNameFunction extends Component {
             </React.Fragment>
         );
     }
-    //use Function to edit className element
+    //use Function to edit className element (aka css class)
     //if 0, yellow color. else, blue color. 
     getBadgeClasses(){
         let classes = "badge m-2 "
