@@ -14,7 +14,8 @@ import SetAttributes from './components/SetAttributes';
 import ClassNameFunction from './components/ClassNameFunction';
 import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionRender';
-
+import HandlingEvent from './components/HandlingEvent';
+import BindingEventHandler from './components/BindingEventHandler';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +35,10 @@ root.render(
     <ListRender/>
     <br/><hr/>
     <ConditionalRender/>
+    <br/><hr/>
+    <HandlingEvent/>
+    <br/><hr/>
+    <BindingEventHandler/>
     <br/><hr/>
 
 
