@@ -23,7 +23,7 @@ class PlusMinusOne extends Component {
            <button onClick={this.AddCount}>Increment</button>
            <button onClick={this.MinusCount}>Decrement</button>
 
-           {/* step 3. React find out div changed */}
+           {/* /step 3. count is changed in the function, React will update the div  */}
            <div>{this.showNumber()}</div>
 
        </React.Fragment>

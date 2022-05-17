@@ -18,6 +18,7 @@ import HandlingEvent from './components/HandlingEvent';
 import BindingEventHandler from './components/BindingEventHandler';
 import UpdateState from './components/UpdateState';
 import PlusMinusOne from './components/PlusMinusOne';
+import PassEventArgument from './components/PassEventArgument';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -45,6 +46,8 @@ root.render(
     <UpdateState/>
     <br/><hr/>
     <PlusMinusOne/>
+    <br/><hr/>
+    <PassEventArgument/>
     <br/><hr/>
 
 
