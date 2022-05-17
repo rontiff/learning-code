@@ -14,7 +14,6 @@ import SetAttributes from './components/SetAttributes';
 import ClassNameFunction from './components/ClassNameFunction';
 import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionRender';
-import Trial from './components/trial';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,20 +22,19 @@ root.render(
     {/* <App /> */}
     {/* <Counter /> */}
     <FirstComponent/>
-    <br/>
+    <br/><hr/>
     <SpecifyChildren/>
-    <br/>
+    <br/><hr/>
     <IntroState/>
-    <br/>
+    <br/><hr/>
     <SetAttributes/>
-    <br/>
+    <br/><hr/>
     <ClassNameFunction/>
-    <br/>
+    <br/><hr/>
     <ListRender/>
-    <br/>
+    <br/><hr/>
     <ConditionalRender/>
-    <br/>
-    <Trial/>
+    <br/><hr/>
 
 
 
