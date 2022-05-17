@@ -14,7 +14,7 @@ class BindingEventHandler extends Component {
 //       this.handleIncrement = this.handleIncrement.bind(this);
 //   }
 
-//arrow function binding method
+//Example: arrow function binding method
   handleIncrement=()=>{
     return console.log("Increment Clicked", this)  
   }

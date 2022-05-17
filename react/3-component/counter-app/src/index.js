@@ -16,6 +16,8 @@ import ListRender from './components/ListRender';
 import ConditionalRender from './components/ConditionRender';
 import HandlingEvent from './components/HandlingEvent';
 import BindingEventHandler from './components/BindingEventHandler';
+import UpdateState from './components/UpdateState';
+import PlusMinusOne from './components/PlusMinusOne';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -39,6 +41,10 @@ root.render(
     <HandlingEvent/>
     <br/><hr/>
     <BindingEventHandler/>
+    <br/><hr/>
+    <UpdateState/>
+    <br/><hr/>
+    <PlusMinusOne/>
     <br/><hr/>
 
 
