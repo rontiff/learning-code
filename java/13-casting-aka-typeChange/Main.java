@@ -43,11 +43,26 @@ public class Main{
                 // System.out.println(f);
 
         // Correct example:
-
                 String g="1";
                 int h= Integer.parseInt(g)+2;
                 System.out.println(h);
        
+        ////////////////////////////////////////////
+        // Wrong example:
+                // String i="1.1";
+                // int j= Integer.parseInt(i)+2;
+                // //because i=1.1 ,it can't convert to int
+                // System.out.println(j);
+
+        // Correct example:
+                String k="1.1";
+                double l= Double.parseDouble(k)+2;
+                //because i=1.1 ,it can't convert to int
+                System.out.println(l);
+
+
+        
+        
      } 
  }   
  
