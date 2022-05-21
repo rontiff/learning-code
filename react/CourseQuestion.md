@@ -1,6 +1,4 @@
 
-
-
 3-component-lecture 14
     the concept of Binding Event Handler?
     Question: What is Bind Method doing?

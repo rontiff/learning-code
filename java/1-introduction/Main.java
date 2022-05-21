@@ -1,9 +1,12 @@
-//print Hello World 
+
+//basic structure of java
 
 public class Main{
     public static void main(String[]args){
-         System.out.println("Hello World");
-         //short cut : sout
+         System.out.println("Hello World");  //short cut :sout
      } 
  }   
+
+
+
  

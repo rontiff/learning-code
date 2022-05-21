@@ -8,7 +8,7 @@ public class Main{
         System.out.println(message);
 
         // + operator
-        String message2 = "Hello World"+",my name is Ron.";
+        String message2 = "Hello World" + ",my name is Ron.";
         System.out.println(message2);
 
         //Starting string:  searching

@@ -11,6 +11,7 @@ public class Main{
 
         numbers[0]=1;
         numbers[1]=2;
+        numbers[10]=3; // "Exception" is java way to report error.
 
         //wrong example 
         System.out.println(numbers);  //don't do this

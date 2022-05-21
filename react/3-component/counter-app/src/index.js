@@ -6,25 +6,23 @@ import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.css"
 
 // from Course
-// import Counter from "./components/counter"
-import FirstComponent from './components/FirstComponent'
-import SpecifyChildren from './components/SpecifyChildren'
-import IntroState from './components/IntroState';
-import SetAttributes from './components/SetAttributes';
-import ClassNameFunction from './components/ClassNameFunction';
-import ListRender from './components/ListRender';
-import ConditionalRender from './components/ConditionRender';
-import HandlingEvent from './components/HandlingEvent';
-import BindingEventHandler from './components/BindingEventHandler';
-import UpdateState from './components/UpdateState';
-import PlusMinusOne from './components/PlusMinusOne';
-import PassEventArgument from './components/PassEventArgument';
+import FirstComponent from './components/1-FirstComponent'
+import SpecifyChildren from './components/2-SpecifyChildren'
+import IntroState from './components/3-IntroState';
+import SetAttributes from './components/4-SetAttributes';
+import ClassNameFunction from './components/5-ClassNameFunction';
+import ListRender from './components/6-ListRender';
+import ConditionalRender from './components/7-ConditionRender';
+import HandlingEvent from './components/8-HandlingEvent';
+import BindingEventHandler from './components/9-BindingEventHandler';
+import UpdateState from './components/10-UpdateState';
+import PlusMinusOne from './components/11-PlusMinusOne';
+import PassEventArgument from './components/12-PassEventArgument';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    {/* <Counter /> */}
     <FirstComponent/>
     <br/><hr/>
     <SpecifyChildren/>
@@ -49,13 +47,6 @@ root.render(
     <br/><hr/>
     <PassEventArgument/>
     <br/><hr/>
-
-
-
-    
-
-
-
 
   </React.StrictMode>
 );
