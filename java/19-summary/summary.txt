@@ -1,0 +1,11 @@
+
+
+Learned above: 
+
+1. Variables
+2. Constants
+3. Primitive Types
+4. Reference Types
+5. Casting 
+6. Numbers, String, Arrays
+7. Read input from user
