@@ -7,6 +7,8 @@ public class Main{
 
         // format the number with $ or % 
 
+        //format decimal places
+
         //Class :NumberFormat
 
         // NumberFormat currency =NumberFormat.Numberforat();   <-- can't do this. 
@@ -44,6 +46,18 @@ public class Main{
         
         String number = NumberFormat.getCurrencyInstance().format(123.456);
         System.out.println(number);
+
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        // format decimal places:
+
+        //set up 2 Decimal Place:
+        DecimalFormat df=new DecimalFormat("0.00");
+        double l=Math.random()*100;
+        System.out.println(df.format(l));
+        
+        
      } 
  }   
  
