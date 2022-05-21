@@ -22,6 +22,18 @@ public class Main{
 
         // Method with String Class:
 
+            // 1. operator
+            // 2. find word in string (start & end)
+            // 3. find index of string
+            // 4. length of string
+            // 5. replace word in string
+            // 6. to lowerCase & to UpperCase
+            // 7. trim (remove space)
+            // 7. assign variable
+
+        ////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////
+
             // + operator
 
                 String message2 = "Hello World" + ",my name is Ron.";
@@ -46,32 +58,32 @@ public class Main{
                 message3.endsWith("day.");
                 System.out.println(message3.endsWith("day."));
                 //print: true
-
+                
         ////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////
+        
+            //IndexOf the character, result = # of index
 
-            //length of message
+                String message4 = "abcdefghijklmnop";
 
-                String message4 = "What is the length of this message?";
-                message4.length();
-                System.out.println(message4.length());
-                //print: 35
-
-        ////////////////////////////////////////////////////////
-        ////////////////////////////////////////////////////////
-
-             //IndexOf the character, result = # of index
-
-                String message5 = "abcdefghijklmnop";
-
-                message5.indexOf("p");
-                System.out.println(message5.indexOf("p"));
+                message4.indexOf("p");
+                System.out.println(message4.indexOf("p"));
                 //print: 15
 
-                message5.indexOf("x");
-                System.out.println(message5.indexOf("x"));
+                message4.indexOf("x");
+                System.out.println(message4.indexOf("x"));
                 //print: -1  
-                //x doesn't exist in message5 
+                //x doesn't exist in message4 
+        ////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////
+
+            //length of string
+
+                String message5 = "What is the length of this message?";
+                message5.length();
+                System.out.println(message5.length());
+                //print: 35
+
 
         ////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////
@@ -132,4 +144,3 @@ public class Main{
      } 
  }   
  
- //print Hello World 
