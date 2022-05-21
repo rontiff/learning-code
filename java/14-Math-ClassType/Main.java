@@ -4,7 +4,6 @@
 public class Main{
     public static void main(String[]args){
 
-
        int a = Math.round(1.1F);                  // 四捨五入
        int b = (int)Math.ceil(1.1F);              // around up 
        int c = (int)Math.floor(1.1F);             // around down
