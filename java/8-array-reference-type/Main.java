@@ -1,33 +1,37 @@
 import java.util.Arrays;
 
-public class Main{
-    public static void main(String[]args){
-        
+// number array
+
         //array is Reference types
         //array have fix length
 
-        //Create integer array
+public class Main{
+    public static void main(String[]args){
+        
+
+
+        //Create integer array (reference type)
         int[] numbers = new int[5];
 
         numbers[0]=1;
         numbers[1]=2;
-        numbers[10]=3; // "Exception" is java way to report error.
+        // numbers[10]=3; // "Exception" is java way to report error.
 
-        //wrong example 
-        System.out.println(numbers);  //don't do this
+        //wrong example. java will print out the address.
+        System.out.println(numbers); 
 
         //correct example, use "Arrays" class
-        Arrays.toString(numbers);     //do this 
+        Arrays.toString(numbers);     
 
         System.out.println(Arrays.toString(numbers));
 
         ///////////////////////////////////////////////
         ///////////////////////////////////////////////
 
+        // another way to print array
         int[] numbers2 = {1,2,3,4,5};
 
-        //wrong example
-        System.out.println(numbers2);
+        System.out.println(Arrays.toString(numbers2));
 
         System.out.println(numbers2.length);
     }
