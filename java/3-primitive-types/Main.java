@@ -8,6 +8,10 @@ public class Main{
         //small value
         byte age=30;
 
+        //short
+        short num=30;
+        System.out.println(num);
+
         //integer value
         int viewsCount = 123456789;
 
