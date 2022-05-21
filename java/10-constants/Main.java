@@ -5,10 +5,7 @@ public class Main{
         //use "final"
         final float Pi =3.14f;
 
-
-        // PI=4.0; //can't re-define
-
-        System.out.println(number);
+        System.out.println(Pi);
 
      } 
  }   
