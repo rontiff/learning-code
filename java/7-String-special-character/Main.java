@@ -1,6 +1,8 @@
 public class Main{
     public static void main(String[]args){
 
+        //single quote doesn't work. 
+
         //add double quote in string
         String message = "Hello \"Ron\"";
 
