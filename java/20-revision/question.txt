@@ -1,0 +1,90 @@
+
+
+1. type the structure of Java.
+    public class Main{
+        public static void main(string[]args){
+            System.out.println("Hello");  
+        }
+    }
+2. what is the structure define variable?
+    type variable = value
+
+3. what to choose before define variable?
+    select the type
+
+4. What are the 2 big types in Java?
+    primitive type & reference types
+
+5. What is the type storing number or simple value?
+    primitive type
+
+6. What are the primitive types store integer?
+    byte, short, int, long
+
+7. What are the primitive types store decimal places?
+    float, double 
+
+8. If there is a 2 dp number, java default will consider as what primitive type?
+    double
+
+9. How to create a float type when deafult is double?
+    put a suffix at the end of the number. 
+    float price = 9.99f;
+
+10. What are the primitive types store single character?
+    char
+
+11. Do primitive type have member to use?
+    No
+
+12. When should use single quote and double quote?
+    String
+    using single quote with single character. 
+    using double quote with more than 1 characters. 
+
+13. What are the primitive types store boolean?
+    boolean
+    boolean isEligible = true;
+
+14. What is the structure of Reference type variable?
+    Class name = new Class()
+
+15. How to define a reference types variable?
+    -reference type using Class define variable.
+    -reference need to allocate memory. store the function in a variable
+    -The Class of reference type start with Capital Letter
+    -Class have member you can select to use.
+
+    Example: reference type of Class -->Date 
+    Date today = new Date();
+    "today" have the Date Class 
+    today.getTime()
+
+16. Do reference have method/function to use?
+    the reference type variable can select method. Using dot. 
+    yes.
+    Date today = new Date();
+    "today" have the Date Class 
+    today.getTime()
+    
+17. What should add before using the Class in the code?
+    import it 
+    Import java.util.Date
+
+
+
+
+
+
+/////////////////////////////////
+notes: 
+type variable = value
+
+System.out.println(variable); 
+
+/////////////////////////////////
+
+type define variable
+
+2 types: primitive & reference
+

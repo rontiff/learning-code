@@ -4,10 +4,12 @@ import java.awt.*;
 public class Main{
     public static void main(String[]args){
 
-        // Reference Type copy by the reference.
-        //Primitive Type copy by the value.
+        // Primitive Type. variable are completely independent.
+        // Primitive types, store simple number.(integer, number dp)
 
-        // Primitive Type. Completely independent.
+        // Reference Type use Class define variable. can access method. 
+        // Reference Type. dependent because referencing same address.
+
         byte a=1; 
         byte b=a;  
         a=2;
@@ -18,10 +20,9 @@ public class Main{
         ////////////////////////////////////////////
         ////////////////////////////////////////////
 
-        // Reference Type. dependent because referencing same address.
 
         // point1 and point2 are reference same address
-        Point point1= newPoint(x:1, y:1);
+        Point point1= new Point(x:1, y:1);
         Point point2=point1;
 
         point1.x = 2;
