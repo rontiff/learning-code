@@ -179,5 +179,27 @@
 
 ==================================================
 ==================================================
+34. how to create 2-Dimensional Array customize data?
+        int [][] matrix = {{1,2,3},{1,2,3}};
+        System.out.println(Arrays.deepToString(matrix)); 
+    
 
-34. how to create Multi-Dimensional Array. 
+35. how to create 2-Dimensional Array?
+        int [][] matrix = new int[2][3];
+        System.out.println(Arrays.deepToString(matrix)); 
+
+36. how to assign value into the matrix?
+        int [][] matrix = new int[2][3];
+        matrix[0][0]=1;  //matrix [0][0] is the coordinate. 
+
+36. how to create 3-Dimensional Cube?
+        int [][][] matrix = new int[2][3][4];
+        System.out.println(Arrays.deepToString(matrix)); 
+
+==================================================
+==================================================
+
+34. how to create constant
+        //use "final"
+        final int freeze = 273;
+        System.out.println(freeze);
