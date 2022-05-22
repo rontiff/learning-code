@@ -1,23 +1,27 @@
 
-// use int Define Variable
+// Java Require Types when define Variable
 
-// Copy Variable
+// example:
+// Primitive Type: integer(byte, short, int, long)  Decimal Place number (float, double)
+// Reference Type: Date, String, Array
+
 
 public class Main{
     public static void main(String[]args){
 
-        //create integer, no decimal point 
+        //Structure:
+        //type name = value 
         int age=30;
         System.out.println(age);  //30 
 
-        //the subject can re-define
+        //variable can re-define
         age=35;
         System.out.println(age); //35
 
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 
-        //copy variables 
+        //copy variables from another variable
         int temperature=23;
         int todayTemperature = temperature ;
         
