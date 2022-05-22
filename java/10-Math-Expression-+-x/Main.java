@@ -8,8 +8,8 @@ public class Main{
         int add=10+3;
         int minus=10-3;
         int multiply=10*3;
-        //divide is special case
-        double answer = (double)10 / (double)3;
+        //out come have decimal places. need to explicit to float or double
+        float answer = (float)10 / (float)3;
 
         //先乘除後加減
         int priority = 10+3*2;
