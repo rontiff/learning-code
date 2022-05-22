@@ -66,25 +66,93 @@
     Date today = new Date();
     "today" have the Date Class 
     today.getTime()
-    
+
 17. What should add before using the Class in the code?
     import it 
     Import java.util.Date
 
+==================================================
+==================================================
+18. How to create a string variable?
+    String message1 = "this is message1.";
+    System.out.println(message1);
+
+19. What is the type of String variable?
+    Reference type
+
+20. What is the type of String?
+    Class
+
+21. how to combine 2 string together?
+    String messageCombine="Hello"+ " World";
+    System.out.println(messageCombine);
+
+22. how to find word in string?
+        //start with 
+            String message3 = "this is message3.";
+            message3.startsWith("this");
+            System.out.println(message3.startsWith("this"));
+        //end with
+            String message4 = "this is message4.";
+            message4.endsWith("message4.");
+            System.out.println(message4.endsWith("message4."));
+
+23. how to find index of string character?
+        //find a index of string    
+            String message5 = "this is message5.";
+            message5.indexOf("m");
+            System.out.println(message5.indexOf("m"));
+
+24. how to find the length of string?
+        //find a length of string
+            String message6 = "this is message5.";
+            message6.length();
+            System.out.println(message6.length());
+
+25. how to replace a word in string?
+        //replace a word in string
+            String message7 = "this is message7.";
+            message7.replace("this","here");
+            System.out.println(message7.replace("this","here"));
+
+26. how to change the string to uppercase lowercase?
+        //upper case:
+            String message8 = "this message touppercase.";
+            message8.toUpperCase();
+            System.out.println(message8.toUpperCase());
+
+        //lower case:
+            String message9 = "this message tolowercase.";
+            message9.toLowerCase();
+            System.out.println(message9.toLowerCase());
+
+27. how to trim the string with no space. 
+        //trim the message. 
+            String message10 = "           this message need to trim.";
+            message10.trim();
+            System.out.println(message10.trim());
+
+28. how to assign variable from another variable with method?
+        //assign variable from a variable with method. 
+            String message11=message8.toUpperCase();
+            System.out.println(message11);
+
+29. how to use double quote in a string?
+        //use double quote inside a string
+            String message12 = "The word \"Hello\" is double quoted";
+            System.out.println(message12);
+
+30. how to use backward slash in a string?
+        //use back slash in a string
+            String message13 = "C:\\drive\\folder1\\folder2";
+            System.out.println(message13);
+
+31. how to add a new line in a string?
+        //create a new line in a string
+            String message14 = "this is sentence 1,\nthis is sentence 2.";
+            System.out.println(message14);
 
 
 
 
-
-/////////////////////////////////
-notes: 
-type variable = value
-
-System.out.println(variable); 
-
-/////////////////////////////////
-
-type define variable
-
-2 types: primitive & reference
 

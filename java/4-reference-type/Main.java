@@ -1,27 +1,17 @@
 
-
-//Reference Types store complex object. (example: date, mail message)
-
-//Reference Types need to import
-
 import java.util.Date;
 
 public class Main{
     public static void main(String[]args){
+        
+        // Reference Type need to import
+        // Reference Type store complex object. (Date,Time,Email)
+        // Reference Type use Class define variable.
+        // Reference Type variable can access method. 
 
-        //primitive type no allocate memory
-        //not object
-        //doesn't have any member
-        int age=10;
-        System.out.println(age);
-
-
-        //reference type ALWAYS need new operator allocate 分配 memory.
-
-        //Reference type need to create new object to use. 
 
         Date now=new Date();      //"now" have the Date Class.
-        now.getTime();            //reference type family member. using dot to find family.
+        now.getTime();            //reference type variable can access method. 
         System.out.println(now);  
         
      } 

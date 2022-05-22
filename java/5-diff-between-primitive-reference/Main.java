@@ -6,9 +6,12 @@ public class Main{
 
         // Primitive Type. variable are completely independent.
         // Primitive types, store simple number.(integer, number dp)
+        // Primitive Type variable have NO method/function. 
 
-        // Reference Type use Class define variable. can access method. 
-        // Reference type store complex object. 
+
+        // Reference Type use Class define variable.
+        // Reference Type variable can access method. 
+        // Reference type store complex object. (Date, Email)
 
         ////////////////////////////////////////////
         ////////////////////////////////////////////
@@ -25,7 +28,7 @@ public class Main{
         ////////////////////////////////////////////
 
         // point1 and point2 are reference same address
-        
+
         Point point1= new Point(1,1);
         Point point2=point1;
         point1.x = 2;
