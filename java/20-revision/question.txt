@@ -154,5 +154,30 @@
 
 
 
+==================================================
+==================================================
+
+32. how to create a integer Arrays?
+    //create integer Array
+        int[] number= new int[5];
+        System.out.println(Arrays.toString(number));
+
+33. how to assign value into the Arrays?
+        int[] number= new int[5];
+        numbers[0]=1;
+        numbers[1]=2;
+        numbers[2]=3;
+        numbers[3]=4;
+        numbers[4]=5;
+        System.out.println(Arrays.toString(number));
+
+33. how to create customize array?
+        int[] numbers = {1,2,3,4,5,6,7,8};
+        System.out.println(Arrays.toString(numbers));
+        
 
 
+==================================================
+==================================================
+
+34. how to create Multi-Dimensional Array. 

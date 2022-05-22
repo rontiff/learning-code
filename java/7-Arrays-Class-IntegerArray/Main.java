@@ -30,7 +30,7 @@ public class Main{
         ///////////////////////////////////////////////
 
         // another way to print array
-        int[] numbers2 = {1,2,3,4,5};
+        int[] numbers2 = {1,2,3,4,5};    //user curly bracket
 
         System.out.println(Arrays.toString(numbers2));
 
