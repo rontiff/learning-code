@@ -1,19 +1,19 @@
-// arithmetic Expression 
+// Math Expression 
 
 public class Main{
     public static void main(String[]args){
 
         // Increment Operator
             int x=1;
-            ++x; // pre-fix   // y will add 1
-            x++; //post-fix   // y will add 1 
+            ++x;    // pre-fix   // y will add 1
+            x++;    //post-fix   // y will add 1 
 
             System.out.println(x);  // print: 3 in total
 
         // Decrement Operator
             int y=10;
-            --y;   // pre-fix   // y will add 1
-            y--;   //post-fix   // y will add 1 
+            --y;    // pre-fix   // y will add 1
+            y--;    //post-fix   // y will add 1 
 
             System.out.println(y);  // print: 8 in total
 

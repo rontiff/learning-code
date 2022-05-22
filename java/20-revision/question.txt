@@ -171,7 +171,7 @@
         numbers[4]=5;
         System.out.println(Arrays.toString(number));
 
-33. how to create customize array?
+34. how to create customize array?
         int[] numbers = {1,2,3,4,5,6,7,8};
         System.out.println(Arrays.toString(numbers));
         
@@ -179,27 +179,38 @@
 
 ==================================================
 ==================================================
-34. how to create 2-Dimensional Array customize data?
+35. how to create 2-Dimensional Array customize data?
         int [][] matrix = {{1,2,3},{1,2,3}};
         System.out.println(Arrays.deepToString(matrix)); 
     
 
-35. how to create 2-Dimensional Array?
+36. how to create 2-Dimensional Array?
         int [][] matrix = new int[2][3];
         System.out.println(Arrays.deepToString(matrix)); 
 
-36. how to assign value into the matrix?
+37. how to assign value into the matrix?
         int [][] matrix = new int[2][3];
         matrix[0][0]=1;  //matrix [0][0] is the coordinate. 
 
-36. how to create 3-Dimensional Cube?
+38. how to create 3-Dimensional Cube?
         int [][][] matrix = new int[2][3][4];
         System.out.println(Arrays.deepToString(matrix)); 
 
 ==================================================
 ==================================================
 
-34. how to create constant
+39. how to create constant
         //use "final"
         final int freeze = 273;
         System.out.println(freeze);
+
+==================================================
+==================================================
+
+40. how to use increment decrement;
+    int a = 1;
+    int b = a++;
+
+    System.out.println(a); //2
+    System.out.println(b); //1
+
