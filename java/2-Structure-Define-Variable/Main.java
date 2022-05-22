@@ -1,5 +1,5 @@
 
-// Java Require Types when define Variable
+// Java require Types when define Variable
 
 // example:
 // Primitive Type: integer(byte, short, int, long)  Decimal Place number (float, double)
