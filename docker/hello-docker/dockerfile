@@ -1,0 +1,10 @@
+# start from the base iamge / node image.
+#those image are officially published on dockerHub 
+# which linux distribution we want to use. -->alpine 
+FROM node:alpine
+# Copy our application 
+COPY . /app
+# specify which dir
+WORKDIR /app
+# commant instruction to execute
+CMD node app.js
