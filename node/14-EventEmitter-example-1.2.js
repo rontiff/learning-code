@@ -1,11 +1,13 @@
 
 // app module
 
-// we can't work with this emitter object
-// const emitter = new EventEmitter;
-
+// don't work with emitter object, hard to use in real application
 
 const EventEmitter=require('events');
+
+const emitter = new EventEmitter;
+
+
 
 const Logger = require('./14-EventEmitter-example-1.1');
 const logger = new Logger();
