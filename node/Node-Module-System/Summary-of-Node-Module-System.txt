@@ -1,0 +1,45 @@
+
+Node Module System we learned:
+
+    -We don’t have the window object in Node. 
+
+    -The global object in Node is “global”. 
+
+    -variables we define are not added to the “global” object. 
+
+    -Every file in a Node application is a module. Node automatically wraps the code in each file with an IIFE (Immediately-invoked Function Expression) to create scope. So, variables and functions defined in one file are only scoped to that file and not visible to other files unless explicitly exported. 
+
+    -Export a variable or function from a module using module.exports: 
+
+            module.exports.sayHello = sayHello; 
+            module.exports = ClassName; 
+
+    -Load a module, use the require function: 
+
+            const logger = require(‘./logger’);
+    
+
+    -Node has a few useful built-in modules:
+    https://nodejs.org/dist/latest-v16.x/docs/api/
+
+            1. file system              const fs=require('fs');
+            2. path                     const path=require('path');
+            3. network                  const http=require('http');
+            4. operating system         const os=require('os');
+            4. EventEmitter (class)     const EventEmitter=require('events');  
+
+
+    -EventEmitter is one of the core classes.
+    in Node that allows us to raise (emit) and handle events. Several built-in classes in Node derive from EventEmitter. 
+
+    -To create a class with the ability to raise events, we should extend EventEmitter: 
+    
+            const EventEmitter = require('events');
+
+            class Message extends EventEmitter{
+                sayHello(message){
+                    console.log(message) 
+                    this.emit('say123', {id:1, age:8}) 
+                }
+            }
+            module.exports=Message;

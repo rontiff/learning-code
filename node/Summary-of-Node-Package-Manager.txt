@@ -1,0 +1,39 @@
+
+Summary of Node Package Manager:
+
+1. create package.json
+    npm init 
+    npm init --yes
+
+    package.json is a json file include some basic information about your application.such as name, version, authors, dependency etc
+
+2. add third-party library 
+
+    search for: https://www.npmjs.com/
+
+    example: install package "underscore"
+
+        npm i underscore
+    
+    2 things happen after npm i 
+        1. at package.json show dependency of the package version
+        2. the npm package will store at node_modules
+
+3. use the third-party library 
+
+    import the library in the javascript file. 
+    Apply the method from the library. (need to read the document to use the library)
+
+4. Package dependency
+
+    the npm module can be dependence to other npm module, so the module can be a lot of things. 
+    
+    problem: npm package will install multiple times. 
+    solution: if package using different version, node_modules will store separately. 
+
+5. NPM Packages and source Control: 
+
+    
+
+    problem: if node_module is really big. really hard to export. 
+    solution: create .gitignore--> node_modules/
