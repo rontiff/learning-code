@@ -33,7 +33,59 @@ Summary of Node Package Manager:
 
 5. NPM Packages and source Control: 
 
-    
-
     problem: if node_module is really big. really hard to export. 
     solution: create .gitignore--> node_modules/
+
+
+6. Semantic Versioning
+
+    Semantic Versioning = 0.0.0  (Major . Minor . Patch)
+
+    look at dependency
+        example: 
+        "underscore": "^1.13.3"  (only version 1.X.X available)
+        "underscore": "~1.13.3"  (only version 1.13.X available)
+        "underscore": "1.13.3"   (exact version 1.13.3 available)
+
+
+
+    the ^ means any version start from the Major version 1.X.X
+    the ~ means any version start from the Major and Minor version 1.8.X
+    to get exact version, remove the sign from the dependency. Example  "underscore": "1.13.3"
+
+
+7. Listing the Installed Packages:
+
+        1. terminal: npm list (easier to search)
+
+8. Listing the Installed Packages dependencies: 
+
+        1. terminal: npm view mongoose dependencies
+
+9. Install Specific Version of Package:
+
+        Example: mongoose version is 6.3.4, how to download version 6.2.1?
+
+        1. npm install mongoose@6.2.1
+
+10. Update local Package / Search outdated package
+
+        1. terminal: npm outdated 
+
+        2. terminal: npm update  (only minor and path will update, not major)
+
+11. Package for developing tools dependencies:
+
+        problem: we need package "jshint" for development, but not for production.
+
+        solution: install the package outside of dependencies, install at dev-dependencies
+        
+        1. terminal: npm install jshint --save-dev
+
+        look at package.json, should see devDependencis record separated from dependencies.
+
+12. uninstall a package:
+
+        1. terminal : npm uninstall mongoose
+        2. terminal : npm un mongoose
+
