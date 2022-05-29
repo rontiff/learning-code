@@ -1,0 +1,17 @@
+
+
+
+Restful services (Restful API)
+
+
+What is Restful?
+
+Restful = Representational State Transfer 
+
+Restful is a convention of building  http services. 
+
+
+http services including Create, Read, Update, Delete. (CRUD Operations)
+
+
+http methods: Get, Post, Put, Delete. 
