@@ -89,3 +89,11 @@ Summary of Node Package Manager:
         1. terminal : npm uninstall mongoose
         2. terminal : npm un mongoose
 
+13. working with global package
+
+    npm i -g npm 
+    npm un -g npm 
+
+14. publish a Package:
+
+    

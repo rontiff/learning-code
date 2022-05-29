@@ -1,0 +1,41 @@
+////////////////////////////////////
+
+Example: Package "underscore"
+Example: Package "jshint" for dev-dependencies
+
+////////////////////////////////////
+
+create package.json                              npm init / npm init --yes
+
+package install:                                 npm install underscore / npm i underscore
+  
+listing installed Package:                       npm list 
+
+listing installed Package Dependencies:          npm view underscore dependencies
+
+Install Specific Version of Package:             npm install underscore@1.0.0
+
+Check Outdated Package:                          npm outdated
+
+update npm Package                               npm update
+
+create dev-npm-package                           npm i jshint --save-dev
+
+uninstall package:                               npm uninstall underscore / npm un underscore
+
+create global package                            npm i -g npm   npm un -g npm 
+
+////////////////////////////////////
+
+publish npm package:
+npm account
+
+step 1 : add user or login                       npm adduser / npm login 
+step 2 : information                             1. username 2. password 3. email
+step 3 : publish                                 npm publish 
+step 4 : update published package:               npm major / npm minor / npm patch
+step 5 : publish                                 npm publish 
+
+////////////////////////////////////
+
+ignore node_module : create .gitignore --> node_modules/
