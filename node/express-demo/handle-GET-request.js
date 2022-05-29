@@ -24,7 +24,7 @@ app.get('/api/courses',(req,res)=>{
 // get single course from server
 app.get('/api/courses/:id', (req,res)=>{
 
-    const course = courses.find(c=>c.id === parseInt(req.params.id))
+    const course = courses.find(c=>c.id === parseInt(req.params.id));
 
     // Array.find is javascript method
     //what is C?
