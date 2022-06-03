@@ -17,6 +17,7 @@
 
 
 // Node is "NOT" blocking Synchronous 
+    // blocking Synchronous    
     //example: a waitress take the order from table1, wait at kitchen until food is ready and serve table1. after that go to table2.
     //the thread only serve one client. new client need to wait. Or add more hardware.
 

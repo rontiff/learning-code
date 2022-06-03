@@ -1,11 +1,9 @@
 
 //lets create a logger
 
-let url="http://mylogger.io/log"
-
 function printMessage(message){
     //send an HTTP request 
-    console.log(message)
+    console.log(`you just printed "${message}" by calling printMessage function. imported from 5-create-reuseable-module-printMessage.js `)
 }
 
 //export the function outside
