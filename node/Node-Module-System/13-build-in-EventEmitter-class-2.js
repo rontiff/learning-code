@@ -3,10 +3,10 @@
 // including data in the event response  
 
 const EventEmitter = require("events");
-const emitter = new EventEmitter;
+const emitter = new EventEmitter();
 
 
-
+//  2 params, (name of event , callback function)
 emitter.on('messageLogged', function(arg){   // e or arg = argument , 
     console.log("Listener Called", arg)
 })
@@ -17,8 +17,9 @@ emitter.on('messageLogged',(arg)=>{
 })
 
 
-// add additional argument of the event
-emitter.emit('messageLogged', {id:1, url:'http://'});
+// trigger the event listener 
+//add argument in the event
+emitter.emit('messageLogged', {id:1, url:'http://', age:30});
 
 
 

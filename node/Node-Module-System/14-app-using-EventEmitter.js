@@ -6,12 +6,12 @@ const Message =require('./14-function-using-EventEmitter');  //import module
 const message = new Message(); // create instance 
 
 
-// what will response when called
-message.on('say123', (arg)=>{
+// event listener triggered from function sayHello 
+message.on('when saying 123', (arg)=>{
     console.log("method is called, will return the this message and arg",arg)
 });
 
 
-//call the response
-// use class call method
-message.sayHello('this message print first, and trigger the response.')
+// call the function 
+// inside the function, there is a event listener 
+message.sayHello('this message print first, and trigger the event listener.')

@@ -1,6 +1,6 @@
-// function
 
-// const emitter = new EventEmitter();    not often use it because not using class will create a lot different object. 
+// const emitter = new EventEmitter();    <-- not often use it. Because not using class will create a lot different object. 
+
 // real world, not often work with EventEmitter Object. But Class.
 
 const EventEmitter = require('events');
@@ -10,7 +10,7 @@ class Message extends EventEmitter{
     //method of the class
     sayHello(message){
         console.log(message) 
-        this.emit('say123', {id:1, age:8}) //use emit create the event & argument 
+        this.emit('when saying 123', {id:1, age:8}) //use emit create the event & argument 
     }
 }
 

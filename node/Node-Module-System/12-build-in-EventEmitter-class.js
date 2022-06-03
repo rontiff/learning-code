@@ -26,12 +26,8 @@ emitter.addListener('messageLogged', function(){
     console.log("Listener Called Again")
 })
 
-
-
-
-
 //raise an event
-emitter.emit('messageLogged') //(aka: making a noise, produce signalling a event happen )
+emitter.emit('messageLogged') //trigger an event happen 
 
 
 // the order is important, if raise the event before the listener, it won't return. 
