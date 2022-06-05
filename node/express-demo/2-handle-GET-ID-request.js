@@ -38,7 +38,37 @@ app.get('/api/genres/:id', (req, res) => {
     }
   });
 
+  // get single course
+  app.get('/api/courses/:id', (req,res)=>{
+    // :id is defining variable
+    res.send(req.params.id)
+  })
 
+
+
+
+  // other API route example: 
+
+  app.get('/', (req,res)=>{
+    // hard code
+    res.send("hello world");
+  })
+
+  app.get('/api/courses',(req,res)=>{
+    // hard code
+    res.send([1,2,3]); 
+  })
+  // http://localhost:3000/api/courses
+
+
+  
+// query string parameter. for anything that is optional. 
+// provide additional data to backend services
+app.get('/api/post/:year/:month', (req,res)=>{
+  // look at this path : http://localhost:3000/api/post/2008/10?sortBy=name
+  res.send(req.query)
+  // query parameter is store in the object with a bunch of key value pair.
+})
 
 
   
