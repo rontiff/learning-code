@@ -13,7 +13,6 @@ const courses=[
 ];
 
 
-// api route
 app.get('/api/courses',(req,res)=>{
     res.send(courses);
 })
