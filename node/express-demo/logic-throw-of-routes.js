@@ -1,11 +1,15 @@
 
 // import npm for backend creating backend
-
 const Joi = require('joi');
 const express = require('express');
 const app = express();
 
 app.use(express.json());
+
+// app.get()     //get data
+// app.post()    //create data
+// app.put()     //update date 
+// app.delete()  //delete data
 
 
 

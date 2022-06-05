@@ -1,52 +1,75 @@
 
+// import npm for backend creating backend
 
+const Joi = require('joi');
 const express = require('express');
+const app = express();
 
-app=express();  
+app.use(express.json());
 
-//return middleware
-app.use(express.json())
-
-
-// database?
-const courses=[
-    {id:1, name:'course1'},
-    {id:2, name:'course2'},
-    {id:3, name:'course3'}
+//pretend data base object
+const genres = [
+  { id: 1, name: 'Action' },  
+  { id: 2, name: 'Horror' },  
+  { id: 3, name: 'Romance' },  
 ];
 
-app.post('/api/courses',(req,res)=>{
-
-    const course = {
-        id:courses.length+1,   //assign new id, so find current id +1
-        name:req.body.name,    //based on user input
-    }
-    //update the array. 
-    courses.push(course)
-    res.send(course)
-})
-//use postman to test 
-
-// step1: open postman, select post method
-// step2: sleect body , raw , JSON(application/json)
-// step3: create a demo data post. and check result
 
 
+//Never trust what user post. Always validate what user Post
+//create new item in the object
+app.post('/api/genres', (req, res) => {
 
-//Input Validation
-// For Security Reason, Never trust what client send you.
+    //step 1: using Joi set up Validation
+    
+
+    //step 2: if didn't pass validation, return error 
+    
+
+    //step 3: the object structure of the new item. 
 
 
+    //step 4: push the new item to the object
+    
+
+    //step 5: return and show the object
+});
 
 
+//create new content in the object
+app.post('/api/genres', (req, res) => {
 
 
+    //step 1: using Joi for Validation
+    const { error } = validateGenre(req.body); 
+
+    //step 2: if didn't pass validation, return error 
+    if (error) return res.status(400).send(error.details[0].message);
+
+    //step 3: the object structure of the new item. 
+    const genre = {
+        id: genres.length + 1,
+        name: req.body.name
+    };
+
+    //step 4: push the new item to the object
+    genres.push(genre);
+
+    //step 5: return and show the object
+    res.send(genre);
+});
 
 
+//npm Joi is for validation checking set up. 
+function validateGenre(genre) {
+  const schema = {
+    name: Joi.string().min(3).required()
+  };
 
-// environment variable = PORT 
-// global object "process"
+  return Joi.validate(genre, schema);
+}
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, ()=>console.log(`listening on port ${PORT}...`))
 
+// Create port
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}...`));

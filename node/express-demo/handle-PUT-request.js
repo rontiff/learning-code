@@ -1,101 +1,77 @@
 
-//Input Validation
-// For Security Reason, Never trust what client send you.
+// import npm for backend creating backend
 
+const Joi = require('joi');
 const express = require('express');
-const Joi = require('joi') //import Joi version 13.1.0
+const app = express();
+
+app.use(express.json());
 
 
-app=express();  
 
-//return middleware
-app.use(express.json())
-
-// database?
-const courses=[
-    {id:1, name:'course1'},
-    {id:2, name:'course2'},
-    {id:3, name:'course3'}
+//pretend data base object
+const genres = [
+  { id: 1, name: 'Action' },  
+  { id: 2, name: 'Horror' },  
+  { id: 3, name: 'Romance' },  
 ];
 
-app.post('/api/courses',(req,res)=>{
+//update item in the object
+app.put('/api/genres/:id', (req, res) => {
 
-    // define a schema: shape of the object (example: do we have email? string? min max number character?)
-
-    //Validation
-    const schema={
-        name:Joi.string().min(3).required()   
-    }
-
-    const result = Joi.validate(req.body, schema);
-    // console.log(result);
-
-    const course = {
-        id:courses.length+1,   
-        name:req.body.name,  
-    }
-
-    // Check Validation
-    if(result.error){
-        // res.status(400).send(result.error);
-        res.status(400).send(result.error.details[0].message); //show only details of the error 
-
-        return;
-    }else if (result){
-        //update the array. 
-        courses.push(course)
-        res.send(course)
-    }
-})
+    //step 1: search the ID form the object, and store it at const
 
 
-
-app.put('/api/courses',(req,res)=>{
-    // 1. look up the course. If not existing, return 404
-    // 2. set validation 
-    // 3. response. if !validation, return 404. else return update.
+    //step 2: if ID doesn't exist, return 404
 
 
-    // Check Course exist or not. If not existing, return 400
-    const course = courses.find(c=>c.id === parseInt(req.params.id));
-
-    if(!course){
-        res.status(400).send("the course wrong id")
-    }
-
-    //Validation, if not validate, return 404
-    const schema={
-        name:Joi.string().min(3).required()   
-    }
-    const result = Joi.validate(req.body, schema);
-
-    if (!result){
-        res.status(404).send(result.error.details[0].message);
-    }
-
-    //update the course
-    course.name = req.body.name;
+    //step 3: using Joi for Validation update changes 
     
-    // Response:
-    if (result){
-        res.send(course);
-    }
-})
+
+    //step 4: if didn't pass validation, return error 
+
+    
+    //step 5: if pass validation, update the element item
 
 
-function validateCourse(course){
-    const schema={
-        name:Joi.string().min(3).required()   
-    }
-    return Joi.validate(course, schema);
+    //step 6: return and show the object
 
+});
+
+app.put('/api/genres/:id', (req, res) => {
+
+  //step 1: search the ID form the object, and store it at const
+  const genre = genres.find(c => c.id === parseInt(req.params.id));
+
+  //step 2: if ID doesn't exist, return 404
+  if (!genre) return res.status(404).send('The genre with the given ID was not found.');
+
+  //step 3: using Joi for Validation update changes 
+  const { error } = validateGenre(req.body); 
+
+  //step 4: if didn't pass validation, return error 
+  if (error) return res.status(400).send(error.details[0].message);
+  
+  //step 5: if pass validation, update the element item
+  genre.name = req.body.name; 
+
+  //step 6: return and show the object
+  res.send(genre);
+});
+
+
+
+// Create validation function using npm Joi 
+function validateGenre(genre) {
+  const schema = {
+    name: Joi.string().min(3).required()
+  };
+
+  return Joi.validate(genre, schema);
 }
 
 
 
-// environment variable = PORT 
-// global object "process"
-
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, ()=>console.log(`listening on port ${PORT}...`))
-
+// Create port
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on port ${port}...`));

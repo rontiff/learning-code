@@ -1,52 +1,39 @@
 
-
+const Joi = require('joi');
 const express = require('express');
-
 app=express();  
 
+//pretend data base object
+const genres = [
+    { id: 1, name: 'Action' },  
+    { id: 2, name: 'Horror' },  
+    { id: 3, name: 'Romance' },  
+  ];
 
-// database?
-const courses=[
-    {id:1, name:'course1'},
-    {id:2, name:'course2'},
-    {id:3, name:'course3'}
-];
+// get the object
+app.get('/api/genres', (req, res) => {
 
+    //step 1: if object doesn't exist, return 404
 
-app.get('/api/courses',(req,res)=>{
-    res.send(courses);
-})
-// http://localhost:3000/api/courses
+    //step 2: if object exist, return object
 
+});
+        
+app.get('/api/genres', (req, res) => {
 
-
-// get single course from server
-app.get('/api/courses/:id', (req,res)=>{
-
-    const course = courses.find(c=>c.id === parseInt(req.params.id));
-
-    // Array.find is javascript method
-    //what is C?
-    //req.params.id will return string. so need to parseInt the value.
-
-    
-    if (!course){
-        // if false:
-        res.status(404).send('The course with the given ID was not found');
-    }else if (course){
-        //if true:
-        res.send(course);
+    if (genres){
+        //step 1: if object doesn't exist, return 404
+        return res.status(404).send('The genre with the given ID was not found.');
+    }else{
+        //step 2: if object exist, return object
+        return res.send(genres);
     }
-}) 
- 
- 
+});
+        
 
 
 
 
-
-// environment variable = PORT 
-// global object "process"
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, ()=>console.log(`listening on port ${PORT}...`))
