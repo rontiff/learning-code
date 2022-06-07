@@ -21,7 +21,7 @@ app.get('/api/genres', (req, res) => {
         
 app.get('/api/genres', (req, res) => {
 
-    if (genres){
+    if (!genres){
         //step 1: if object doesn't exist, return 404
         return res.status(404).send('The genre with the given ID was not found.');
     }else{
