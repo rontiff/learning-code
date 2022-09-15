@@ -1,0 +1,19 @@
+
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+
+.article{
+    margin:30px;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+        
