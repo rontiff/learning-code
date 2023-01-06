@@ -1,15 +1,17 @@
 
 
-// if 0600-1200; Morning!
-// if 1200-1800; Afternoon!
-// if 1800-0000; night!
 
-let hour=10;
 
-if (hour>=6 && hour<=12){
-    console.log('Morning!');
-}else if(hour>=12 && hour<=18){
-    console.log('Afternoon!');
-}else{
-    console.log('Night!')
-}
+const name='rontiff';
+
+console.log(name.length)
+console.log(name[4])
+console.log(name.includes('ron'))
+console.log(name.includes('rn'))
+console.log(name.endsWith('f'))
+console.log(name.indexOf('t'))
+
+console.log(name.toUpperCase())
+console.log(name.toLowerCase())
+
+
