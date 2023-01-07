@@ -8,3 +8,14 @@ Learning Goal
     5. Casting 
     6. Numbers, String, Arrays
     7. Read input from user
+
+
+
+Execute Java Code: 
+
+terminal:
+    1. javac Main.java
+    2. java Main
+
+Output: 
+    1. press ( ctrl + alt + n )
