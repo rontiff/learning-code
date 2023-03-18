@@ -38,3 +38,41 @@ public class Main{
      } 
  }   
  
+
+
+
+ import java.text.NumberFormat;
+import java.util.Scanner;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Principal: ");
+        int principal =scanner.nextInt();
+        System.out.print("Annual Interest Rate: ");
+        double interestRate=scanner.nextDouble();
+        System.out.print("Period (Years): ");
+        int year=scanner.nextInt();
+
+        //Calculation
+        //r
+        final byte monthInYear=12;
+        final byte percent=100;
+        double monthlyIntRate = interestRate/monthInYear/percent;
+        //n
+        int n= year*12;
+        //top
+        double equationTop = monthlyIntRate*(Math.pow((1+monthlyIntRate),(n)));
+        //bottom
+        double equationBottom =(Math.pow((1+monthlyIntRate),(n)))-1;
+        
+        //final answer
+        double mortgage = (double)Math.ceil(principal*(equationTop/equationBottom));
+
+        //dollar sign format
+        String mortgageFormatted = NumberFormat.getCurrencyInstance().format(mortgage);
+        
+        System.out.println("Mortgage: "+mortgageFormatted);
+    }
+}
+

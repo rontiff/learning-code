@@ -36,4 +36,23 @@ public class Main{
             System.out.println(d); //print: 2
      } 
  }   
- 
+
+
+
+ public class Main{
+    public static void main(String[]args){
+        //implicit casting (aka automatic conversion)
+        // byte>short>int>long>float>double
+        short x=1;
+        int y=x+2;
+        System.out.println(y);
+    }
+}
+
+public class Main{
+    public static void main(String[]args){
+        double x=1.35423;
+        int y=(int)x+1;
+        System.out.println(y);
+    }
+}
