@@ -20,3 +20,5 @@ print(multiply(1,2,3))
 #step 5: "F10" execute one statement at a time. 
 
 #step 6: "F11" step in to the function
+
+#step 7: "F11 + shift" step out of the function

@@ -9,11 +9,6 @@
 # 6. a lot of argument 
 # 7. a lot of argument (dictionary)
 # 8. scope
-# 9. debugging
-
-
-
-
 
 ######################################################################################################
 
@@ -121,6 +116,6 @@ save_user(id=1,name="john",age=20)
 def sayHi():
     sentence="message is local variable of \"greet\" function."
 
-print(sentence)
+# print(sentence)
 
 ######################################################################################################
