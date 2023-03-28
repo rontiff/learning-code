@@ -3,7 +3,7 @@
 # summary
 # 1. loop
 # 2. for in loop
-# 3. for else loop
+# 3. for else (break loop)
 # 4. nested loop ( a loop inside of another loop)
 # 5. Iterables
 # 6. while loop
@@ -27,7 +27,7 @@ for number in range(1,10,2):
 
 ######################################################################################################
 
-# 3. for else 
+# 3. for else (break loop)
 
 successful=False
 

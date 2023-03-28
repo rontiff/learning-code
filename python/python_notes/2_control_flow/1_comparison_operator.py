@@ -16,26 +16,18 @@ comparison_4 = 10 <= 3
 comparison_5 = 10 == 3  # equal
 comparison_6 = 10 != 3  # not equal
 
-print(comparison_1)
-print(comparison_2)
-print(comparison_3)
-print(comparison_4)
-print(comparison_5)
-print(comparison_6)
-
 ######################################################################################################
 
 # 2. if else statement
 
-user_tem_input = 31
+tem = input("temperature:")
 
-if user_tem_input > 30:
-    print("it's warm, drink water")
-elif user_tem_input <= 30 and user_tem_input >= 15:
-    print("it's good weather, go outside.")
-else:
-    print("it is cold, wear clothes.")
-
+if int(tem)<10:
+    print("weather is cold.")
+elif int(tem)>=10 and int(tem)<=30:
+    print("weather is fine.")
+else: 
+    print("weather is hot.")
 
 ######################################################################################################
 

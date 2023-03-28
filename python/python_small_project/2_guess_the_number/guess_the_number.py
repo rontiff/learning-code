@@ -4,7 +4,6 @@
 
 import random
 
-
 def guess(x):
     random_number = random.randint(1,x)
     guess=0
@@ -16,5 +15,4 @@ def guess(x):
             print("sorry, guess again, too high.")
     print(f"Bingo! {random_number} is correct.")
 
-
-guess(10)
+guess(5)
