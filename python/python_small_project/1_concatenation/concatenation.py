@@ -9,5 +9,4 @@ weight = input("weight: ")
 
 output = f"Hi, my name is {name.title()}, I'm {age} years old {gender}. I'm height is {height} cm and my weight is {weight}kg."
 
-
 print(output)

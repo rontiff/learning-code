@@ -9,10 +9,15 @@ def guess(x):
     guess=0
     while guess !=random_number:
         guess = int(input(f"guess a number between 1 and {x} :"))
-        if guess<random_number:
+        if guess<1 or guess>int(x):
+            print(f"Number out of range, please guess a number between 1 and {x}.")
+        elif guess<random_number:
             print("sorry, guess again, too low")
         elif guess>random_number:
             print("sorry, guess again, too high.")
     print(f"Bingo! {random_number} is correct.")
 
-guess(5)
+
+x=input("Give a non-negative integer number: ")
+
+guess(int(x))

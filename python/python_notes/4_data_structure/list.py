@@ -10,6 +10,8 @@
 # 7. Finding item in list
 # 8. sorting list
 
+
+
 ######################################################################################################
 
 # 1. List
@@ -142,15 +144,15 @@ letters_add_item.insert(0,"start")  # insert=插入
 
 # Delete item in list
 
-letters_add_item.pop()              # pop= default delete last item
+letters_add_item.pop()              # pop    = default delete last item
 
-letters_add_item.pop(0)             # pop= delete first item
+letters_add_item.pop(0)             # pop    = delete first item
 
 letters_add_item.remove("a")        # remove = delete specific item. argument required.
 
-letters_add_item.clear()            # clear: clear a range of item
+letters_add_item.clear()            # clear  = clear a range of item
 
-del letters_add_item[0:4]           # del: delete a range of item
+del letters_add_item[0:4]           # del    = delete a range of item
 
 ######################################################################################################
 
@@ -173,6 +175,8 @@ if "d" in letters_find_item:        # if statement search
 
 # 8. sorting list
 
+# "sorted" create a new list
+# "sort" edit the original list
 number_sort = [1,9,2,8,3,7,4,6,5]
 
 #sorted
@@ -180,7 +184,7 @@ new_sorted_list = sorted(number_sort)  # "sorted" create a new list
 print(new_sorted_list)
 
 #sort
-number_sort.sort()                     # "sort" modify original list
+number_sort.sort()                     # "sort" edit the original list
 print(number_sort)
 
 
@@ -188,5 +192,5 @@ print(number_sort)
 reverse=sorted(number_sort,reverse=True)
 print(reverse)
 
-
+######################################################################################################
 
